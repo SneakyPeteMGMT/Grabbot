@@ -1,0 +1,57 @@
+name: "Bugbericht"
+description: "Melde einen Fehler: Schritte zur Reproduktion, erwartetes Verhalten und tatsächliches Verhalten."
+labels:
+  - "bug"
+body:
+  - type: input
+    id: short_description
+    attributes:
+      label: "Kurze Zusammenfassung"
+      description: "Eine kurze, prägnante Zusammenfassung des Problems."
+      placeholder: "z. B. 'Fehler beim Laden der STL-Datei'"
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Reproduktionsschritte"
+      description: "Schritt-für-Schritt-Anleitung, wie der Fehler reproduziert werden kann."
+      placeholder: "1. ...\n2. ..."
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Erwartetes Verhalten"
+      description: "Was hättest du erwartet?"
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Tatsächliches Verhalten"
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevante Logs / Fehlermeldungen"
+      description: "Füge Fehlerausgaben oder Konsolenlogs bei."
+  - type: select
+    id: severity
+    attributes:
+      label: "Schweregrad"
+      description: "Einschätzung der Dringlichkeit"
+      options:
+        - label: "niedrig"
+          value: low
+        - label: "mittel"
+          value: medium
+        - label: "hoch"
+          value: high
+        - label: "kritisch"
+          value: critical
+      default: "medium"
+  - type: input
+    id: system
+    attributes:
+      label: "System / Umgebung"
+      description: "Betriebssystem, Git-Version, verwendete Tools, etc."
+      placeholder: "z. B. Ubuntu 22.04, Git 2.39"
+  - type: textarea
+    id: possible_fix
+    attributes:
+      label: "Mögliche Ursache / Vorschlag zur Behebung"
+      description: "Optional: Hast du eine Idee, woran es liegen könnte oder wie es zu fixen wäre?"

@@ -1,0 +1,43 @@
+name: "Feature-Anfrage"
+description: "Vorschlag für neue Funktion oder Verbesserung. Beschreibe Motivation, Nutzen und mögliche Umsetzung."
+labels:
+  - "enhancement"
+body:
+  - type: input
+    id: short_description
+    attributes:
+      label: "Kurze Zusammenfassung"
+      description: "Eine kurze, prägnante Zusammenfassung der gewünschten Funktion."
+      placeholder: "z. B. 'Export als STEP-Datei hinzufügen'"
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation / Problem"
+      description: "Welches Problem löst diese Funktion? Für wen ist sie nützlich?"
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Vorschlag / Umsetzung"
+      description: "Konkreter Vorschlag, wie die Funktion aussehen oder implementiert werden könnte."
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternativen"
+      description: "Gibt es alternative Ansätze, die bereits geprüft wurden?"
+  - type: textarea
+    id: benefits
+    attributes:
+      label: "Nutzen / Akzeptanzkriterien"
+      description: "Was muss erfüllt sein, damit diese Anfrage als gelöst gilt?"
+  - type: input
+    id: estimate
+    attributes:
+      label: "Geschätzter Aufwand (Stunden)"
+      description: "Optional: grobe Aufwandsschätzung"
+      placeholder: "z. B. 8"
+  - type: input
+    id: related
+    attributes:
+      label: "Verwandte Issues / PRs"
+      description: "Nummern oder Links zu verwandten Issues/PRs"
+      placeholder: "z. B. #12, #34"
