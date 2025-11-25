@@ -18,6 +18,8 @@ Hardware (derzeit)
 Software
 - Steuerung: Laptop (Python)
 - Low‑level: Arduino IDE / ESP32 Firmware (falls benötigt)
+- Blender
+- Ultimaker Cura
 
 Ordnerstruktur 
 - layout/          - Schaltpläne
