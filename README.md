@@ -1,5 +1,7 @@
 # Grabbot — Educational project: robot with gripper arm
 
+> **Note:** This project is currently under active development. Some features may be unstable or incomplete.
+
 Short description
 -----------------
 Grabbot is an educational project that gives learners practical experience in embedded electronics, control, programming, and robotics. The goal is a simple gripper arm that can be controlled by a laptop [...].
